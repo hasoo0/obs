@@ -23,6 +23,12 @@ public class OgrenciTest {
                 ogr.getSoyad() + " "+ ogr.getHarc());
 
 
+        Ogrenci ogr2 = new Ogrenci(2, "Ugur", "Coskun " ,
+                "Turkiye", 5000);
+        System.out.println(ogr2);
+
+
+
 
 
 

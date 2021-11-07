@@ -9,6 +9,18 @@ public class Ogrenci {
     private String dogumyeri;
     private double  harc;
 
+    public Ogrenci() {
+    }
+
+
+
+    public Ogrenci(int no, String ad, String soyad, String dogumyeri, double harc) {
+        this.no = no;
+        this.ad = ad;
+        this.soyad = soyad;
+        this.dogumyeri = dogumyeri;
+        this.harc = harc;
+    }
 
     public int getNo() {
         return no;
@@ -51,11 +63,16 @@ public class Ogrenci {
             this.harc = harc;
         }
 
-
-
-
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Ogrenci{" +
+                "no=" + no +
+                ", ad='" + ad + '\'' +
+                ", soyad='" + soyad + '\'' +
+                ", dogumyeri='" + dogumyeri + '\'' +
+                ", harc=" + harc +
+                '}';
+    }
 }
